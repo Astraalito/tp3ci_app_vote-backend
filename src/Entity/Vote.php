@@ -20,13 +20,13 @@ class Vote
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity=user::class, inversedBy="votes")
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="votes")
      * @ORM\JoinColumn(nullable=false)
      */
     private $userID;
 
     /**
-     * @ORM\ManyToOne(targetEntity=choice::class, inversedBy="votes")
+     * @ORM\ManyToOne(targetEntity=Choice::class, inversedBy="votes")
      * @ORM\JoinColumn(nullable=false)
      */
     private $choiceID;
@@ -36,24 +36,24 @@ class Vote
         return $this->id;
     }
 
-    public function getUserID(): ?user
+    public function getUserID(): ?User
     {
         return $this->userID;
     }
 
-    public function setUserID(?user $userID): self
+    public function setUserID(?User $userID): self
     {
         $this->userID = $userID;
 
         return $this;
     }
 
-    public function getChoiceID(): ?choice
+    public function getChoiceID(): ?Choice
     {
         return $this->choiceID;
     }
 
-    public function setChoiceID(?choice $choiceID): self
+    public function setChoiceID(?Choice $choiceID): self
     {
         $this->choiceID = $choiceID;
 

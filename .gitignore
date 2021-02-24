@@ -10,4 +10,7 @@
 /vendor/
 /.idea/
 *.lock
+.env
 ###< symfony/framework-bundle ###
+
+migrations/
