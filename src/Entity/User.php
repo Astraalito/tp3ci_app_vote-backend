@@ -37,12 +37,14 @@ class User
     /**
      * @ORM\Column(type="boolean")
      */
-    private $admin;
+    private $admin = false;
 
     /**
+     *
+     *
      * @ORM\OneToMany(targetEntity=Vote::class, mappedBy="userID")
      */
-    private $votes;
+    private $votes = [];
 
     public function __construct()
     {

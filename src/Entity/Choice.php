@@ -28,8 +28,9 @@ class Choice
 
     /**
      * @ORM\OneToMany(targetEntity=Vote::class, mappedBy="choiceID")
+     *
      */
-    private $votes;
+    private $votes = [];
 
     public function __construct()
     {
