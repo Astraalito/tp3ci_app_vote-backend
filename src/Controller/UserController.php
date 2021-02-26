@@ -26,6 +26,7 @@ class UserController extends AbstractController
                 'id' => $user->getId(),
                 'username' => $user->getUsername(),
                 'admin' => $user->getAdmin(),
+                'nbVote' => count($user->getVotes()),
             ];
             return new Response(json_encode($data) , 200);
         } else {
