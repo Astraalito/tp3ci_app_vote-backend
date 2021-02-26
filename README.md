@@ -20,6 +20,14 @@
 						}
 						```
   - DELETE : "http://127.0.0.1:8000/api/users/`ID`"
+  - POST : "http://127.0.0.1:8000/api/users/authentication"
+			payload: ```
+						{
+							"username": "username",
+							"password": "password",
+						}
+						```
+	
 ---
 ### Vote: 
   - GET : http://127.0.0.1:8000/api/vote/`ID`
