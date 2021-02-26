@@ -14,3 +14,11 @@
 ###< symfony/framework-bundle ###
 
 migrations/
+
+###> symfony/phpunit-bridge ###
+.phpunit
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+.env.test
